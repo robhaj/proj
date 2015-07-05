@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+ 
+
+      <link rel="stylesheet" href="proj.css"> 
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+      <title>
+         Rob Hajek
+      </title>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>
+   </head>
+   <body>
+<div class="jumbotron">
+  <div class="container">
+    <h1>Robert Hajek</h1>
+    <h3>Future Web Developer</h3>
+    <p class="age">I turn 24 in <span id="countdown"></span>!</p>
+  <p><a class="btn btn-primary btn-lg btn2" href="page2.html" role="button">Click Me For Page 2!</a></p>
+</div>
+</div>
+<p class="white"> My name is Rob, I've lived in Colorado for about 3 years now but I am originally from Chicago. I just moved to the Cheesman Park area after living in Conifer and Fort Collins over the last 2 years. I have 1 brother who also lives in Denver. Some of my hobbies include playing soccer, golfing, and hiking.
+</p>
+
+    <div class="row">
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+         <img src="images/bells.jpg" 
+         alt="Generic placeholder thumbnail">
+      </a>
+         <div class="caption">
+      <h3 class="capt">Maroon Bells</h3>
+      <p class="capt">Here is a picture of Maroon Bells</p>
+       <p>
+            <h4><button class="btn btn-primary" role="button">
+               Filter
+            </button></h4>
+    </div>
+   </div> 
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+         <img src="images/chicago.jpg" 
+         alt="Generic placeholder thumbnail">
+      </a>
+    <div class="caption"> 
+      <h3 class="capt2">Chicago</h3>
+      <p class="capt1">This is a picture of the Chicago skyline.</p>
+    </div>
+   </div>
+   <div class="col-sm-6 col-md-3">
+      <a href="#" class="thumbnail">
+         <img src="images/spieth.jpg" 
+         alt="Generic placeholder thumbnail">
+      </a>
+         <div class="caption">
+      <h3 class="capt">Jordan Spieth</h3>
+      <p class="capt">Here is a picture of Jordan Spieth</p>
+       <p>
+            <button class="btn btn-primary" role="button">
+               Filter
+            </button>
+    </div>
+   </div> 
+</div>
+    <script type="text/javascript">
+  var birthday_date = new Date("July 19, 2015").getTime();
+  var days, hours, minutes, seconds;
+  var countdown = document.getElementById("countdown");
+    setInterval (function () {
+  var current_date = new Date().getTime();
+  var seconds_left = (birthday_date - current_date) / 1000;
+    days = parseInt(seconds_left / 86400);
+    seconds_left = seconds_left % 86400;
+
+    hours = parseInt(seconds_left / 3600);
+    seconds_left = seconds_left % 3600;
+
+    minutes = parseInt(seconds_left / 60);
+    seconds = parseInt(seconds_left % 60);
+
+    countdown.innerHTML = days + "d, " + hours + "h, "
+    + minutes + "m, " + seconds + "s";
+  
+  }, 1000);
+</script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('button:last').click(function () {
+                $('img:last').attr('src', 'images/spieth2.jpg');          });
+        });
+        $(document).ready(function () {
+            $('h4').click(function () {
+                $('img:first').attr('src', 'images/bells2.jpg');          });
+            });
+    </script>
+   </body>
+</HTML>

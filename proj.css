@@ -1,0 +1,68 @@
+body {
+	background-color:#3F3F3F!important;
+}
+.jumbotron {
+	background-color: #ffffff!important;
+}
+.myButton {
+	color: #ffffff;
+	background-color:#3f3f3f;
+	margin-left: 150px;
+}
+.caption {
+	color: #ffffff!important;
+}
+.col-sm-6 {
+	margin-left:50px;
+
+}
+.head2 {
+	margin-left:40px;
+}
+.col-md-3 {
+
+}
+
+.btn {
+	margin-left:110px;
+}
+.btn1 {
+	float:right;
+	margin-top:50px;
+}
+.btn2 {
+	float:right;
+
+
+}
+.capt {
+	text-align:center;
+}
+.white {
+	color: #ffffff;
+	margin-left:20px;
+}
+
+.capt1 {
+	margin-top:10px;
+	text-align:center;
+}
+
+.page-header {
+	background-color:#ffffff;
+	padding-top:0px!important;
+	margin-top:-20px!important;
+}
+.age {
+	text-align:right;
+}
+.gif {
+	margin: auto;
+	width: 60%;
+	border:3px solid #ffffff;
+	padding:10px;
+}
+.capt2 {
+	margin-top:50px;
+	text-align:center;
+}
